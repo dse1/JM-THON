@@ -1,8 +1,7 @@
 <h1 align="center"><b>Source Alone 🇸🇦 . </b></h1>
 <h4 align="center">مـرحبا بـك في سـورس الون</h4>
 
- CatUserbot
-A simple Telegram userbot based on Telethon .
+ 
 [![catuserbot logo](https://telegra.ph/file/526c9cdc2fded4c63e5ff.jpg)](https://t.me/c1cic)
 
 
