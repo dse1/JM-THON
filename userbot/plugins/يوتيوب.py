@@ -340,10 +340,10 @@ async def kakashi(event):
     chat = "@instasavegrambot"
     link = event.pattern_match.group(1)
     if "www.instagram.com" not in link:
-        await edit_or_reply(event, "- - يجب كتابة رابط من الانستغرام لتحميله ❕")
+        await edit_or_reply(event, "- يجب كتابة رابط من الانستغرام لتحميله ❕")
     else:
         start = datetime.now()
-        catevent = await edit_or_reply(event, "➥ جار التحميل انتظر قليلا 🔍")
+        catevent = await edit_or_reply(event, "- جار التحميل انتظر قليلا 🔍")
     async with event.client.conversation(chat) as conv:
         try:
             msg_start = await conv.send_message("/start")
