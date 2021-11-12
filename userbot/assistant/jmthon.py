@@ -31,7 +31,7 @@ async def start(event):
     replied_user = await event.client(GetFullUserRequest(event.sender_id))
     firstname = replied_user.user.first_name
     vent = event.chat_id
-    starttext = f"**اهلين {firstname}/n انا بوت خاص بـ [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)\n, اقوم بمساعدة الحساب فقط ، \n\n- [مطور السورس](tg://user?id={bot.uid}) \nيمكـنك مراسلـة المطور عبـر هذا البـوت . \n\nملاحظه :\nلا تقم بأضافتي في اي مجموعة ولا تقم بالدردشه معي فالمطور سوف يرى كل هاذا .**"
+    starttext = f"- اهلين {firstname}\nانا بوت خاص بـ  [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)\n, اقوم بمساعدة الحساب فقط ، \n\n- [مطور السورس](tg://user?id={bot.uid}) \nيمكـنك مراسلـة المطور عبـر هذا البـوت . \n\nملاحظه :\nلا تقم بأضافتي في اي مجموعة ولا تقم بالدردشه معي فالمطور سوف يرى كل هاذا ."
     if event.sender_id == bot.uid:
         await tgbot.send_message(
             vent,
@@ -53,8 +53,8 @@ async def start(event):
             message=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("𝐂𝐡𝐚𝐧𝐞𝐞𝐥", "https://t.me/JuuuT")],
-                [Button.url("𝐂𝐡𝐚𝐭", "https://t.me/JwwwT")],
+                [Button.url("𝙲𝙷𝙰𝙽𝙽𝙴𝙻", "https://t.me/JuuuT")],
+                [Button.url("𝙲𝙷𝙰𝚃", "https://t.me/JwwwT")],
             ],
         )
 
