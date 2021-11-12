@@ -38,7 +38,7 @@ def resize_image(image):
 
 @jmthon.ar_cmd(
     pattern="(ت(ل)?ك(راف)?) ?(m|t|ميديا|نص)(?:\s|$)([\s\S]*)",
-    command=("تلكراف", plugin_category),
+    command=("tgm", plugin_category),
     info={
         "header": "To get telegraph link.",
         "description": "Reply to text message to paste that text on telegraph you can also pass input along with command \
@@ -57,7 +57,7 @@ def resize_image(image):
 )  # sourcery no-metrics
 async def _(event):
     "To get telegraph link."
-    jmevent = await edit_or_reply(event, "` ⌔︙جـار انشـاء رابـط تلكـراف`")
+    jmevent = await edit_or_reply(event, "- جـار انشـاء رابـط تلقراف`")
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID,
@@ -126,7 +126,7 @@ async def _(event):
         ms = (end - start).seconds
         jmt = f"https://telegra.ph/{response['path']}"
         await jmevent.edit(
-            f"** ⌔︙الـرابـط : ** [اضغـط هنـا]({jmt})\
-                 \n** ⌔︙الـوقـت المـأخـوذ : **`{ms} ثـانيـة.`",
+            f"** - الرابط : ** [اضغـط هنـا]({jmt})\
+                 \n** - الوقت المأخوذ : **`{ms} ثـانيـة.`",
             link_preview=False,
         )
