@@ -4,7 +4,7 @@ from Jmthon.razan.resources.mybot import *
 
 from ..Config import Config
 
-ROZ_PIC = "https://telegra.ph/file/0dce2b7aaadc56eac9173.jpg"
+ROZ_PIC = "https://telegra.ph/file/1168e31e511d33782dba0.jpg"
 
 if Config.TG_BOT_USERNAME is not None and tgbot is not None:
 
@@ -17,8 +17,8 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         if query.startswith("السورس") and event.query.user_id == bot.uid:
             buttons = [
                 [
-                    Button.url("𝗙𝗲𝗲𝗹𝗶𝗻𝗴", "https://t.me/NvvvM"),
-                    Button.url("𝗠𝘂𝘀𝘁𝗲𝗿", "https://t.me/C1CiC"),
+                    Button.url("𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ‌‌‏⚚", "https://t.me/JuuuT"),
+                    Button.url("𝗠𝗨𝗦𝗧𝗘𝗥 ‏ঌ", "https://t.me/C1CiC"),
                 ]
             ]
             if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):
