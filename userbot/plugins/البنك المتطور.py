@@ -19,20 +19,20 @@ except:
 plugin_category = "tools"
 
 PING_PIC = os.environ.get("PING_PIC") or (
-    "https://telegra.ph/file/502a2c9751c3c06222c51.jpg"
+    "https://telegra.ph/file/9fae7cafab308cff9f5eb.jpg"
 )
 
-JM_TXT = os.environ.get("PING_TEXT") or "مـن لا يتعلم من الماضي لا يرحمه المستقبل  . 🖤"
+JM_TXT = os.environ.get("PING_TEXT") or "𝙳𝚘 𝚗𝚘𝚝 𝚌𝚘𝚖𝚙𝚊𝚛𝚎 𝚖𝚎 ‏ঌ"
 
 
 @jmthon.ar_cmd(
-    pattern="بنك$",
-    command=("بنك", plugin_category),
+    pattern="بنق$",
+    command=("بنق", plugin_category),
     info={
         "header": "امر تجربه البوت اذا يشتغل ارسل  .بنك فقط",
-        "option": "امر بنك المتطور كتابة  @RR7PP",
+        "option": "امر بنق المتطور كتابة  @C1CiC",
         "usage": [
-            "{tr}بنك",
+            "{tr}بنق",
         ],
     },
 )
@@ -42,13 +42,13 @@ async def _(event):
     reply_to_id = await reply_id(event)
     start = datetime.now()
     cat = await edit_or_reply(
-        event, "<b><i>  ❤️⃝⃝⃝⃝⃝⃝⃝⃝⃝⃝⃝⃝⃝⃝⃟✨ البــــنك... 🍀⃝⃝⃟🍂 </b></i>", "html"
+        event, "<b><i>  ثواني عيني .... </b></i>", "html"
     )
     end = datetime.now()
     await cat.delete()
     ms = (end - start).microseconds / 1000
     if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>\n<code>┏━━━━━━━┓\n┃ ✦ {ms}\n┃ ✦ <b>{hmention}</b>\n┗━━━━━━━┛"
+        caption = f"<b><i>{JM_TXT}<i><b>\n<code>♪ 𝗢𝗪𝗡𝗘𝗥 - <b>{hmention}</b>\n"
         await event.client.send_file(
             event.chat_id,
             PING_PIC,
